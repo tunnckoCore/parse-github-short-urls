@@ -8,7 +8,6 @@
 'use strict';
 
 var assert = require('assert');
-var typeOf = require('kind-of');
 var parseUrls = require('./index');
 
 describe('parse-github-short-urls:', function() {
@@ -47,7 +46,7 @@ describe('parse-github-short-urls:', function() {
         branch: ''
       }];
 
-      assert.strictEqual(typeOf(actual), 'array');
+      assert.strictEqual(Array.isArray(actual), true);
       assert.strictEqual(actual.length, 1);
       assert.deepEqual(fixture, actual);
       done();
@@ -65,7 +64,7 @@ describe('parse-github-short-urls:', function() {
         branch: ''
       }];
 
-      assert.strictEqual(typeOf(actual), 'array');
+      assert.strictEqual(Array.isArray(actual), true);
       assert.strictEqual(actual.length, 1);
       assert.deepEqual(fixture, actual);
       done();
@@ -85,7 +84,7 @@ describe('parse-github-short-urls:', function() {
       }];
       var fixture = 'mochajs/mocha#feature';
 
-      assert.strictEqual(typeOf(actual), 'array');
+      assert.strictEqual(Array.isArray(actual), true);
       assert.strictEqual(actual.length, 1);
       assert.strictEqual(actual[0].org, 'mochajs');
       assert.strictEqual(actual[0].repo, 'mocha');
@@ -106,7 +105,7 @@ describe('parse-github-short-urls:', function() {
       }];
       var fixture = 'tunnckoCore/glob2fp';
 
-      assert.strictEqual(typeOf(actual), 'array');
+      assert.strictEqual(Array.isArray(actual), true);
       assert.strictEqual(actual.length, 1);
       assert.strictEqual(actual[0].branch, '');
       assert.strictEqual(actual[0].user, 'tunnckoCore');
@@ -134,7 +133,7 @@ describe('parse-github-short-urls:', function() {
       }];
       var fixture = 'tunnckoCore/glob2fp and regexps/mentions-regex#bugfix';
 
-      assert.strictEqual(typeOf(actual), 'array');
+      assert.strictEqual(Array.isArray(actual), true);
       assert.strictEqual(actual.length, 2);
       assert.strictEqual(actual[0].branch, '');
       assert.strictEqual(actual[1].branch, 'bugfix');
