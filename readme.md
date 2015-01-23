@@ -21,9 +21,9 @@ npm test
 ### [.parseGithubShortUrl](./index.js#L57)
 > Parse github short url to array of objects
 
-* `<str>` **{String}** string to parse for `user/repo#branch`  
-* `[opts]` **{Object}** options are passed to [github-short-url-regex][github-short-url-regex]  
-* `returns` **{Array}**  
+- `<str>` **{String}** string to parse for `user/repo#branch`  
+- `[opts]` **{Object}** options are passed to [github-short-url-regex][github-short-url-regex]  
+- `returns` **{Array}**  
 
 **Example:**
 
@@ -39,8 +39,8 @@ parseGithubShortUrls('tunnckoCore/glob2fp#master');
 //  repository: 'glob2fp',
 //  branch: 'master'
 //}];
-
-parseGithubShortUrls('tunnckoCore/glob2fp#master');
+ *
+parseGithubShortUrls('tunnckoCore/glob2fp#master and mochajs/mocha#feature');
 //=> [{
 //  user: 'tunnckoCore',
 //  username: 'tunnckoCore',
@@ -49,6 +49,14 @@ parseGithubShortUrls('tunnckoCore/glob2fp#master');
 //  repo: 'glob2fp',
 //  repository: 'glob2fp',
 //  branch: 'master'
+//}, {
+//  user: 'mochajs',
+//  username: 'mochajs',
+//  org: 'mochajs',
+//  organization: 'mochajs',
+//  repo: 'mocha',
+//  repository: 'mocha',
+//  branch: 'feature'
 //}];
 ```
 
@@ -93,3 +101,8 @@ Released under the [`MIT`][license-url] license.
 ***
 
 _Powered and automated by [kdf](https://github.com/tunnckoCore), January 22, 2015_
+
+
+[github-short-url-regex]: https://github.com/tunnckoCore/github-short-url-regex
+[parse-github-short-url]: https://github.com/tunnckoCore/parse-github-short-url
+[parse-github-short-urls]: https://github.com/tunnckoCore/parse-github-short-urls
