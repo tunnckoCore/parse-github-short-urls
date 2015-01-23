@@ -1,6 +1,6 @@
 {
   "name": "parse-github-short-urls",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Parse a string (github shorthand urls) into an array of objects",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
