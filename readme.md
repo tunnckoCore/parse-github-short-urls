@@ -11,14 +11,13 @@ npm test
 
 ## Related
 - [parse-github-short-url][parse-github-short-url]
-- [parse-github-short-urls][parse-github-short-url]
 - [github-short-url-regex][github-short-url-regex]
 
 
 ## API
 > For more use-cases see the [tests](./test.js)
 
-### [.parseGithubShortUrl](./index.js#L57)
+### [.parseGithubShortUrls](./index.js#L57)
 > Parse github short url to array of objects
 
 - `<str>` **{String}** string to parse for `user/repo#branch`  
@@ -39,7 +38,7 @@ parseGithubShortUrls('tunnckoCore/glob2fp#master');
 //  repository: 'glob2fp',
 //  branch: 'master'
 //}];
- *
+
 parseGithubShortUrls('tunnckoCore/glob2fp#master and mochajs/mocha#feature');
 //=> [{
 //  user: 'tunnckoCore',
