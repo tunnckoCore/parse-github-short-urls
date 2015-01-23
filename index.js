@@ -10,6 +10,50 @@
 var regex = require('github-short-url-regex');
 var parseUrl = require('parse-github-short-url');
 
+/**
+ * Parse github short url to array of objects
+ *
+ * **Example:**
+ *
+ * ```js
+ * var parseGithubShortUrls = require('parse-github-short-urls');
+ * parseGithubShortUrls('tunnckoCore/glob2fp#master');
+ * //=> [{
+ * //  user: 'tunnckoCore',
+ * //  username: 'tunnckoCore',
+ * //  org: 'tunnckoCore',
+ * //  organization: 'tunnckoCore',
+ * //  repo: 'glob2fp',
+ * //  repository: 'glob2fp',
+ * //  branch: 'master'
+ * //}];
+ *
+ * parseGithubShortUrls('tunnckoCore/glob2fp#master and mochajs/mocha#feature');
+ * //=> [{
+ * //  user: 'tunnckoCore',
+ * //  username: 'tunnckoCore',
+ * //  org: 'tunnckoCore',
+ * //  organization: 'tunnckoCore',
+ * //  repo: 'glob2fp',
+ * //  repository: 'glob2fp',
+ * //  branch: 'master'
+ * //}, {
+ * //  user: 'mochajs',
+ * //  username: 'mochajs',
+ * //  org: 'mochajs',
+ * //  organization: 'mochajs',
+ * //  repo: 'mocha',
+ * //  repository: 'mocha',
+ * //  branch: 'feature'
+ * //}];
+ * ```
+ *
+ * @name parseGithubShortUrls
+ * @param  {String} `<str>` string to parse for `user/repo#branch`
+ * @param  {Object} `[opts]` options are passed to [github-short-url-regex][github-short-url-regex]
+ * @return {Array}
+ * @api public
+ */
 module.exports = function parseGithubShortUrls(str, opts) {
   if (!str) {
     throw new Error('parse-github-short-urls should have at least 1 arguments');

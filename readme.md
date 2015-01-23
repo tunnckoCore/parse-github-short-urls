@@ -9,15 +9,48 @@ npm test
 ```
 
 
-## Usage
+## Related
+- [parse-github-short-url][parse-github-short-url]
+- [parse-github-short-urls][parse-github-short-url]
+- [github-short-url-regex][github-short-url-regex]
+
+
+## API
 > For more use-cases see the [tests](./test.js)
+
+### [.parseGithubShortUrl](./index.js#L57)
+> Parse github short url to array of objects
+
+* `<str>` **{String}** string to parse for `user/repo#branch`  
+* `[opts]` **{Object}** options are passed to [github-short-url-regex][github-short-url-regex]  
+* `returns` **{Array}**  
+
+**Example:**
 
 ```js
 var parseGithubShortUrls = require('parse-github-short-urls');
+parseGithubShortUrls('tunnckoCore/glob2fp#master');
+//=> [{
+//  user: 'tunnckoCore',
+//  username: 'tunnckoCore',
+//  org: 'tunnckoCore',
+//  organization: 'tunnckoCore',
+//  repo: 'glob2fp',
+//  repository: 'glob2fp',
+//  branch: 'master'
+//}];
+
+parseGithubShortUrls('tunnckoCore/glob2fp#master');
+//=> [{
+//  user: 'tunnckoCore',
+//  username: 'tunnckoCore',
+//  org: 'tunnckoCore',
+//  organization: 'tunnckoCore',
+//  repo: 'glob2fp',
+//  repository: 'glob2fp',
+//  branch: 'master'
+//}];
 ```
-
-
-## API / CLI
 
 
 ## Author
