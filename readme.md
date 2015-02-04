@@ -3,21 +3,26 @@
 > Parse a string (github shorthand urls) into an array of objects
 
 ## Install
-```bash
-npm install parse-github-short-urls
+```
+npm i --save parse-github-short-urls
 npm test
 ```
 
 
 ## Related
 - [parse-github-short-url][parse-github-short-url]
+- [stringify-github-short-url][stringify-github-short-url]
+- [stringify-github-short-urls][stringify-github-short-urls]
 - [github-short-url-regex][github-short-url-regex]
+- [function-regex][function-regex]
+- [parse-function][parse-function]
+- [mukla (work in progress)][mukla]
 
 
 ## API
 > For more use-cases see the [tests](./test.js)
 
-### [.parseGithubShortUrls](./index.js#L57)
+### [parseGithubShortUrls](./index.js#L57)
 > Parse github short url to array of objects
 
 - `<str>` **{String}** string to parse for `user/repo#branch`  
@@ -99,8 +104,14 @@ Released under the [`MIT`][license-url] license.
 
 ***
 
-_Powered and automated by [kdf](https://github.com/tunnckoCore), January 22, 2015_
+_Powered and automated by [kdf](https://github.com/tunnckoCore), February 4, 2015_
 
 [github-short-url-regex]: https://github.com/regexps/github-short-url-regex
 [parse-github-short-url]: https://github.com/tunnckoCore/parse-github-short-url
 [parse-github-short-urls]: https://github.com/tunnckoCore/parse-github-short-urls
+
+[function-regex]: https://github.com/regexps/function-regex
+[parse-function]: https://github.com/tunnckoCore/parse-function
+[stringify-github-short-url]: https://github.com/tunnckoCore/stringify-github-short-url
+[stringify-github-short-urls]: https://github.com/tunnckoCore/stringify-github-short-urls
+[mukla]: https://github.com/tunnckoCore/mukla
