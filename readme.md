@@ -9,16 +9,6 @@ npm test
 ```
 
 
-## Related
-- [parse-github-short-url][parse-github-short-url]
-- [stringify-github-short-url][stringify-github-short-url]
-- [stringify-github-short-urls][stringify-github-short-urls]
-- [github-short-url-regex][github-short-url-regex]
-- [function-regex][function-regex]
-- [parse-function][parse-function]
-- [mukla (work in progress)][mukla]
-
-
 ## API
 > For more use-cases see the [tests](./test.js)
 
@@ -64,6 +54,14 @@ parseGithubShortUrls('tunnckoCore/glob2fp#master and mochajs/mocha#feature');
 //}];
 ```
 
+## Related
+* [parse-github-short-url](https://github.com/tunnckoCore/parse-github-short-url): Parse a string (github shorthand url) into an object with `user`, `repo`, `branch` using the `github-short-url-regex`
+* [github-short-url-regex](https://github.com/regexps/github-short-url-regex): Regular expression (Regex) for matching github shorthand (user/repo#branch).
+* [utils](https://github.com/jonschlinkert/utils): Fast, generic JavaScript/node.js utility functions.
+* [function-regex](https://github.com/regexps/function-regex): Function regex. Regular expression for matching function parts. Expose match groups for function name, arguments and function body.
+* [parse-function](https://github.com/tunnckoCore/parse-function): Parse a given function or string (fn.toString()) to object with `name`, `params`, `parameters`, `args`, `arguments` and `body` properties.
+* [stringify-github-short-url](https://github.com/tunnckoCore/stringify-github-short-url): Stringify github shorthand url object returned from `parse-github-short-url`
+
 
 ## Author
 **Charlike Mike Reagent**
@@ -104,14 +102,4 @@ Released under the [`MIT`][license-url] license.
 
 ***
 
-_Powered and automated by [kdf](https://github.com/tunnckoCore), February 4, 2015_
-
-[github-short-url-regex]: https://github.com/regexps/github-short-url-regex
-[parse-github-short-url]: https://github.com/tunnckoCore/parse-github-short-url
-[parse-github-short-urls]: https://github.com/tunnckoCore/parse-github-short-urls
-
-[function-regex]: https://github.com/regexps/function-regex
-[parse-function]: https://github.com/tunnckoCore/parse-function
-[stringify-github-short-url]: https://github.com/tunnckoCore/stringify-github-short-url
-[stringify-github-short-urls]: https://github.com/tunnckoCore/stringify-github-short-urls
-[mukla]: https://github.com/tunnckoCore/mukla
+_Powered and automated by [kdf](https://github.com/tunnckoCore), March 26, 2015_
