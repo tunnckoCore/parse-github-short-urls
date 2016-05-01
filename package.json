@@ -1,6 +1,6 @@
 {
   "name": "parse-github-short-urls",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "**DEPRECATED?** Parse a string of github/npm shorthands into an array of [parse-github-short-url][] objects.",
   "repository": "tunnckoCore/parse-github-short-urls",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
