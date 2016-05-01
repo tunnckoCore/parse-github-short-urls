@@ -44,7 +44,11 @@
     },
     "reflinks": [
       "parse-github-short-url",
-      "limon"
+      "limon",
+      "parse-function",
+      "acorn",
+      "parse-semver",
+      "postjson"
     ],
     "lint": {
       "reflinks": true

@@ -4,7 +4,13 @@
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
-**DEPRECATED, not use it**
+**DEPRECATED, not use it. The `v2` is just empty function - noop.**  
+You may be interested in:
+
+- [limon][] - pluggable lexer.
+- [parse-function][] - based on [acorn][], support parsing ES2015/2016 functions.
+- [parse-semver][] - seems much like this one.
+- [postjson][] - transforming JSON with plugins, may play as post- and pre-processor.
 
 ## Install
 ```
@@ -40,6 +46,10 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [parse-github-short-url]: https://github.com/tunnckocore/parse-github-short-url
 [limon]: https://github.com/limonjs/limon
+[parse-function]: https://github.com/tunnckocore/parse-function
+[acorn]: https://github.com/ternjs/acorn
+[parse-semver]: https://github.com/tunnckocore/parse-semver
+[postjson]: https://github.com/postjson/postjson
 
 [npmjs-url]: https://www.npmjs.com/package/parse-github-short-urls
 [npmjs-img]: https://img.shields.io/npm/v/parse-github-short-urls.svg?label=parse-github-short-urls
